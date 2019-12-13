@@ -2,7 +2,7 @@
 
 ## Presentation
 
-Adds in catalag search results page links to display more results per page.
+Adds in catalag search results page links to display more results per page : 100, 500 and 1000.
 Default number of results is managed by numSearchResults system preference.
 
 Actually only for intranet.
