@@ -6,14 +6,14 @@ use base qw(Koha::Plugins::Base);
 
 use C4::Context;
 
-our $VERSION = '1.0';
+our $VERSION = '1.1';
 
 our $metadata = {
     name   => 'More Results Per Page',
     author => 'BibLibre',
     description => 'See more results per page',
     date_authored   => '2019-12-12',
-    date_updated    => '2019-12-12',
+    date_updated    => '2020-06-18',
     minimum_version => '18.11.00.000',
     maximum_version => undef,
     version         => $VERSION,
@@ -28,6 +28,27 @@ sub new {
     my $self = $class->SUPER::new($args);
 
     return $self;
+}
+
+# Mandatory even if does nothing
+sub install {
+    my ( $self, $args ) = @_;
+
+    return 1;
+}
+
+# Mandatory even if does nothing
+sub upgrade {
+    my ( $self, $args ) = @_;
+
+    return 1;
+}
+
+# Mandatory even if does nothing
+sub uninstall {
+    my ( $self, $args ) = @_;
+
+    return 1;
 }
 
 sub intranet_js {
