@@ -14,7 +14,7 @@ our $metadata = {
     description => 'See more results per page',
     date_authored   => '2019-12-12',
     date_updated    => '2020-06-18',
-    minimum_version => '18.11.00.000',
+    minimum_version => '18.11',
     maximum_version => undef,
     version         => $VERSION,
 };
